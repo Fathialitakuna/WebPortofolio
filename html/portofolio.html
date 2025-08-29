@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>John Doe - Portfolio</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="../css/portofolio.css" />
+</head>
+
+<body>
+    <!-- ===========================
+       Header & Navbar
+    =========================== -->
+    <header>
+        <nav aria-label="Primary navigation">
+            <a href="#home" tabindex="0">Home</a>
+            <a href="#about" tabindex="0">About</a>
+            <a href="#projects" tabindex="0">Projects</a>
+            <a href="#contact" tabindex="0">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ===========================
+       Home Section (Hero)
+    =========================== -->
+    <section class="hero" id="home" role="banner" aria-label="Home section with introduction">
+        <div class="hero-content">
+            <h1 aria-live="polite" aria-atomic="true">John Doe</h1>
+            <h2>Frontend Developer &amp; UI/UX Enthusiast</h2>
+            <button class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})"
+                aria-label="Lihat Proyek Saya">
+                Lihat Proyek Saya
+            </button>
+        </div>
+    </section>
+
+    <!-- ===========================
+       About Me Section
+    =========================== -->
+    <section id="about" aria-labelledby="about-title">
+        <div class="container" style="display:flex; flex-wrap:wrap; align-items:center; gap:2rem;">
+            <div class="profile-pic" aria-label="Foto profil Fathia">
+                <img src="../image/profile.png" alt="Foto profil Fathia" />
+            </div>
+            <div class="about-text">
+                <h2 id="about-title" style="color: var(--color-accent); margin-bottom: 1rem;">About Me</h2>
+                <p>
+                    Hi! Saya <strong>Fathia</strong>, seorang web developer dan UI/UX enthusiast yang suka coding, desain, menggambar, membaca buku, dan bermain game.  
+                    Saya percaya bahwa desain yang menarik dan kode yang rapi dapat menciptakan pengalaman pengguna yang menyenangkan.  
+                    Saat ini saya terus belajar teknologi web modern, dan senang bereksperimen dengan project baru.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+       Projects Section
+    =========================== -->
+    <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <div class="projects-grid" role="list">
+            <!-- Project Card 1 -->
+            <article class="project-card" role="listitem" tabindex="0" aria-label="Website Marketer Generator">
+                <img src="../image/GeneratorScript.jpg" alt="Screenshot Website Marketer Generator" />
+                <div class="project-overlay" aria-hidden="true">
+                    <a href="https://github.com/Fathialitakuna/WebMarketerGenerator" target="_blank" rel="noopener" aria-label="Lihat Website Marketer Generator">
+                        🔗
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Website Marketer Generator</h3>
+                    <p class="project-desc">Web Marketer Generator Script adalah sebuah aplikasi berbasis web yang berfungsi untuk meng-generate script iklan produk secara otomatis. Dibangun dengan HTML, CSS, dan JavaScript.</p>
+                </div>
+            </article>
+
+            <!-- Project Card 2 -->
+            <article class="project-card" role="listitem" tabindex="0" aria-label="Sisfo">
+                <img src="../image/Sisfo.jpg" alt="Screenshot Sisfo" />
+                <div class="project-overlay" aria-hidden="true">
+                    <a href="https://github.com/Fathialitakuna/WebMarketerGenerator" target="_blank" rel="noopener" aria-label="LihatSisfo Project">
+                        🔗
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Website Marketer Generator</h3>
+                    <p class="project-desc">Web Marketer Generator Script adalah sebuah aplikasi berbasis web yang berfungsi untuk meng-generate script iklan produk secara otomatis. Dibangun dengan HTML, CSS, dan JavaScript.</p>
+                </div>
+            </article>
+
+            <!-- Project Card 3 -->
+            <article class="project-card" role="listitem" tabindex="0" aria-label="FE Mobile">
+                <img src="../image/Shopp.jpg" alt="FE Mobile" />
+                <div class="project-overlay" aria-hidden="true">
+                    <a href="https://github.com/Fathialitakuna/FE_Flutter" target="_blank" rel="noopener" aria-label="Lihat FE Mobile Project">
+                        🔗
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">FE Mobile</h3>
+                    <p class="project-desc">Aplikasi frontend toko online berbasis Flutter yang menampilkan produk dalam grid interaktif, dilengkapi dengan navigasi halaman (Home, Search, Profile), serta desain responsif dan modern untuk pengalaman belanja yang cepat dan mudah di perangkat mobile..</p>
+                </div>
+            </article>
+
+             <!-- Project Card 4 -->
+            <article class="project-card" role="listitem" tabindex="0" aria-label="Web Sekolah">
+                <img src="../image/WebSekolah.jpg" alt="Web Sekolah" />
+                <div class="project-overlay" aria-hidden="true">
+                    <a href="https://github.com/Fathialitakuna/Web-PPDB" target="_blank" rel="noopener" aria-label="Lihat Web Sekolah Project">
+                        🔗
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Web Sekolah</h3>
+                    <p class="project-desc">Landing page sekolah adalah website profil yang menampilkan informasi penting tentang sekolah, seperti visi & misi, kurikulum, fasilitas, prestasi, serta kontak. Website ini dibuat dengan PHP (Laravel), HTML, CSS, dan JavaScript.</p>
+                </div>
+            </article>
+
+            <!-- Project Card 5 -->
+            <article class="project-card" role="listitem" tabindex="0" aria-label="Web Fashion">
+                <img src="../image/Fashion.png" alt="Web Fashion" />
+                <div class="project-overlay" aria-hidden="true">
+                    <a href="https://github.com/Fathialitakuna/WebFashion" target="_blank" rel="noopener" aria-label="Lihat Web Fashion Project">
+                        🔗
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Web Fashion</h3>  
+                    <p class="project-desc">Landing page fashion store adalah website promosi untuk menampilkan koleksi produk fashion terbaru dengan desain menarik dan interaktif. Dibangun menggunakan PHP (Laravel), HTML, CSS, dan JavaScript.</p>
+                </div>
+            </article>
+
+            <!-- Project Card 6 -->
+            <article class="project-card" role="listitem" tabindex="0" aria-label="Figma">
+                <img src="../image/Figma.png" alt="Figma" />
+                <div class="project-overlay" aria-hidden="true">
+                    <a href="https://github.com/Fathialitakuna/WebFashion" target="_blank" rel="noopener" aria-label="Lihat Figma Project">
+                        🔗
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Figma</h3>  
+                    <p class="project-desc">Desain aplikasi Smart Novel dibuat dengan Figma, menghadirkan antarmuka modern dan intuitif untuk membaca novel digital..</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ===========================
+       Contact Section
+    =========================== -->
+    <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact Me</h2>
+        <form>
+            <label for="name">Nama</label>
+            <input type="text" id="name" placeholder="Nama Anda" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email Anda" required>
+            <label for="message">Pesan</label>
+            <textarea id="message" placeholder="Tulis pesan Anda..." required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <!-- ===========================
+       Footer
+    =========================== -->
+    <footer>
+        <p>&copy; 2025 Fathia. All Rights Reserved.</p>
+    </footer>
+
+    <!-- ✅ Script untuk animasi fade-in -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("#about, .projects-grid, #contact");
+
+        const revealOnScroll = () => {
+          const triggerBottom = window.innerHeight * 0.85;
+
+          sections.forEach(sec => {
+            const rect = sec.getBoundingClientRect();
+            if (rect.top < triggerBottom) {
+              sec.classList.add("visible");
+            }
+          });
+        };
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll(); // supaya langsung cek pas load
+      });
+    </script>
+</body>
+</html>
